@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-color: #f8f9fa; 
+        }
+
+        .back-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            font-size: 24px; 
+            color: #333; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="cd__intro">
+        <button class="back-button" onclick="location.href='website.html'">Back</button>
+    </header>
+    <div class="message">
+        Your booking has been canceled.
+    </div>
+</body>
+</html>

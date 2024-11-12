@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <title> Shuttle Bus Booking </title>
+    
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="website.css" type="text/css">
+      <style>
+        .input-wrap .input {
+            transition: border 0.3s ease, box-shadow 0.3s ease; cursor: pointer;
+         }
+
+         .input-wrap .input:hover {
+            border: 2px solid #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); cursor: pointer;
+         }
+
+         .screen-bus__travels-col {
+            transition: transform 0.3s ease; cursor: pointer;
+         }
+
+         .screen-bus__travels-col:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); cursor: pointer;
+         }
+         
+         .back-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			position: absolute;
+			left: 20px;
+            top: 15px;
+
+         }
+
+         .back-button:hover {
+            background-color: #0056b3;
+         }
+
+         .screen-bottom ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style-type: none; cursor: pointer;
+         }
+
+         .screen-bottom li {
+            margin: 0 15px; cursor: pointer;
+         }
+
+         .screen-bottom img {
+            width: 40px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;
+         }
+
+         .screen-bottom img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); cursor: pointer;
+         }
+         
+         .booking-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin: 20px;
+         }
+
+         .booking-section h2 {
+            margin-bottom: 15px;
+         }
+
+         .booking-section .input-wrap {
+            margin-bottom: 15px;
+         }
+
+         .booking-section .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+         }
+
+         .booking-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+         }
+
+         .booking-button:hover {
+            background-color: #218838;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="cd__intro">
+         <button class="back-button" onclick="location.href='website.html'">Back</button>
+      </header>
+      <main class="cd__main">
+         <div class="main">
+            <main class="app">
+               <div class="screen-wrap">
+                  <section class="screen-home">
+                     <div class="screen-home__form-wrap">
+                        <div class="screen-home__form">
+                           <form>
+                              
+                           </form>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="screen-bus">
+                     <div class="screen-bus__travels-wrap">
+                        <div class="screen-bus__travels-row">
+                          
+                        </div>
+                     </div>
+                  </section>
+                  
+                  <section class="booking-section">
+                     <h2>Booking Details</h2>
+                     <form id="bookingForm">
+                        <div class="input-wrap">
+                           <input class="input" type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class ="input-wrap">
+                           <input class="input" type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-wrap">
+                           <input class="input" type="number" name="seats" placeholder="Number of Seats" min="1" required>
+                        </div>
+                        <button type="submit" class="booking-button" onclick="location.href='confirm.html'">Confirm Booking</button>
+                     </form>
+                  </section>
+               </div>
+            </main>
+         </div>
+      </main>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script type="text/javascript" src="website.js"></script>
+   </body>
+</html>
